@@ -1,20 +1,16 @@
-#include "putchar.h"
+#include "holberton.h"
 /**
- * main - Print "Putchar" followed by a new line.
- * Description: You are not allowed to include standard libraries.
+ * print_alphabet - Print alphabet in lowercase using only `_putchar`
  * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	char putchar[] = "Putchar";
-	int i = 0;
+	char c = 'a';
 
-	while (putchar[i] != '\0')
+	while (c <= 'z')
 	{
-		_putchar(putchar[i]);
-		i++;
+		_putchar(c);
+		c++;
 	}
 	_putchar('\n');
-
-	return (0);
 }
